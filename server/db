@@ -1,0 +1,38 @@
+-- Criação do banco de dados
+CREATE DATABASE meu_banco_de_dados;
+
+
+
+-- Criação da tabela "influenciador"
+CREATE TABLE influenciador (
+    CPF VARCHAR(11) PRIMARY KEY,
+    nome_completo VARCHAR(100),
+    telefone VARCHAR(20),
+    email VARCHAR(100),
+    senha VARCHAR(50),
+    cidade VARCHAR(100),
+    bairro VARCHAR(100),
+    estado VARCHAR(2),
+    cep VARCHAR(8),
+    data_nascimento DATE,
+    tipo_id INT,
+    experiencia TEXT,
+    perfil TEXT,
+    seguidores INT,
+    seguindo INT
+);
+
+
+CREATE TABLE empresa (
+    CNPJ VARCHAR(14) PRIMARY KEY,
+    razao_social VARCHAR(100),
+    telefone VARCHAR(20),
+    email VARCHAR(100),
+    senha VARCHAR(50),
+    cidade VARCHAR(100),
+    bairro VARCHAR(100),
+    estado VARCHAR(2),
+    cep VARCHAR(8),
+    data_fundacao DATE,
+    tipo_id INT
+);

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Container, Menu, Logo, Welcome, Form, InputContainer, BtnAlterar, Wrapper,Perfil,WrapperPerfil,BtnConfirmacao} from './styled';
 import { formatTelefone } from "../../TelaCadastro/formatadores";
-
+import { useNavigate } from "react-router-dom";
 
 const MeuPerfil = () => {
     const [contato, setContato] = useState('');
@@ -14,16 +14,15 @@ const MeuPerfil = () => {
         cidade: '',
         bairro: ''
     });
-    const [formData, setFormData] = useState({
-       
-    });
+    const [formData, setFormData] = useState({});
+    const navigate = useNavigate();
 
     useEffect(() => {
         const fetchData = async () => {
             try {
                 const token = localStorage.getItem('token');
                 if (!token) {
-                    window.location.href = '/login';
+                    navigate('/login')
                     console.error('Token não encontrado no armazenamento local.');
                     return;
                 }
@@ -53,7 +52,7 @@ const MeuPerfil = () => {
         };
 
         fetchData();
-    }, [formData]);
+    }, [formData, navigate]);
     
 
     const handleAlterarPerfil = async () => {

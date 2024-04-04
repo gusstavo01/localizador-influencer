@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Container, Logo, Menu, Welcome,PopUp, Consulta, Form, BtnProcurar, Resultado } from './styled';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate  } from 'react-router-dom';
 
 const Dashboard = () => {
     const [showPopup, setShowPopup] = useState(false);
@@ -9,14 +9,14 @@ const Dashboard = () => {
     // Estado para armazenar dados da consulta
     const [consultaDados, setConsultaDados] = useState(null);
     const [cep, setCep] = useState('');
-
+    const navigate = useNavigate();
     useEffect(() => {
         const fetchData = async () => {
             
             try {
                 const token = localStorage.getItem('token');
                 if (!token) {
-                    window.location.href = '/login';
+                    navigate('/login'); // Use navigate para redirecionar
                     console.error('Token não encontrado no armazenamento local.');
                     return;
                 }
@@ -36,7 +36,7 @@ const Dashboard = () => {
         };
 
         fetchData();
-    }, []);
+    }, [navigate]);
     const handleLogout = () => {
         localStorage.removeItem('token'); // Limpa o token JWT do localStorage
       

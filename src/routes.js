@@ -12,6 +12,7 @@ import Dashboard from "./components/Dashboard";
 import Metricas from "./components/Dashboard/Metricas";
 import MeuPerfil from "./components/Dashboard/MeuPerfil";
 import DataIntagram from "./components/Dashboard/FormIntagram";
+import ProtectedRoute from './ProtectedRoute ';
 const MainRoutes = () => {
     return (
         <Router>
@@ -28,10 +29,11 @@ const MainRoutes = () => {
                 <Route path="/cadastro" element={<TelaCadastro />} />
                 <Route path="/login" element={<TelaLogin />} />
                 <Route path="/empresa" element={<TelaCadastroEmpresa />} />
-                <Route path="/dashboard" element={<Dashboard />} />
-                <Route path="/metricas/:nomePerfil" element={<Metricas />} />
-                <Route path="/meu-perfil" element={<MeuPerfil />} />
-                <Route path="/authInstagram" element={<DataIntagram/>} />
+                
+                <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
+                <Route path="/metricas/:nomePerfil" element={<ProtectedRoute><Metricas /></ProtectedRoute>} />
+                <Route path="/meu-perfil" element={<ProtectedRoute><MeuPerfil /></ProtectedRoute>} />
+                <Route path="/authInstagram" element={<ProtectedRoute><DataIntagram/></ProtectedRoute>} />
             </Routes>
         </Router>
     );

@@ -1,6 +1,7 @@
 import React,{useState} from "react";
-import {Welcome, Chamada,BtnCriarConta,Title,ContainerForm,Logo,Wrapper,MainContainer, ForgotPasswordLink, BtnEnviar }from "./styled";
+import {Welcome, Chamada,BtnCriarConta,Title,LogoWrapper,ContainerForm,Logo,Wrapper,MainContainer, ForgotPasswordLink, BtnEnviar }from "./styled";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const TelaLogin = () => {
     const [formData, setFormData] = useState({
@@ -35,7 +36,9 @@ const handleSubmit = async (event) => {
     return(
         <MainContainer>
         <Welcome>
-            <Logo>Logo</Logo>
+        <LogoWrapper>
+             <Link to='/'><Logo>Logo</Logo></Link>
+        </LogoWrapper>
             <Chamada>
                 <h1>Bem vindo</h1>
                 <p>Acesse a sua conta<br/> agora mesmo.</p>

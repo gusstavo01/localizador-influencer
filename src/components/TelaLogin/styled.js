@@ -153,14 +153,22 @@ export const MainContainer = styled.div`
         flex-direction: column;
     }
 `;
-export const Logo = styled.h1`
-    margin: 0;
-    padding: 20px;
-    font-weight: 300;
-    cursor: pointer;
+export const LogoWrapper = styled.div`
+  a {
+    text-decoration: none; // Remove o sublinhado
     color: white; // Ajuste a cor conforme necessário
-    align-self: flex-start; // Garante que o logo fique no início (canto superior esquerdo)
+    display: inline-block; // Garante o alinhamento correto
+  }
 `;
+
+export const Logo = styled.h1`
+  margin: 0;
+  padding: 20px;
+  font-weight: 300;
+  cursor: pointer;
+  align-self: flex-start; // Garante que o logo fique no início
+`;
+
 
 export const Title = styled.h1`
     color: #9575CD; 

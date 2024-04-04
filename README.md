@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+ # Localizador de influencer 🔎
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto é uma aplicação fictícia desenvolvida como parte do processo de aprendizado e prática dos conceitos de React, TypeScript, Node.js e PostgreSQL
 
-## Available Scripts
+## Descrição
+Esta aplicação foi desenvolvida com o objetivo de facilitar a conexão entre empresas locais e influenciadores digitais, proporcionando uma plataforma onde ambos os grupos podem se encontrar, colaborar e impulsionar suas atividades de marketing. Com um foco especial na comunidade local, a aplicação visa fornecer uma maneira eficiente e eficaz para as empresas descobrirem influenciadores que possam promover seus produtos ou serviços de forma autêntica e relevante.
+## Uso
+- npm install
+- front end: npm start
+- server: npm run dev
+## Tecnologias Utilizadas
 
-In the project directory, you can run:
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Node.js](https://nodejs.org/)
+- [PostgreSQL](https://www.postgresql.org/)
+- [JWT (JSON Web Tokens)](https://jwt.io/)
+- [bcrypt](https://www.npmjs.com/package/bcrypt)
+- [Styled Components](https://styled-components.com/)
 
-### `npm start`
+## Estrutura 
+![image](https://github.com/gusstavo01/localizador-influencer/assets/105757864/e581a435-901e-4bab-8db5-c9f8e158c808)
+- server: back-end do projeto(api)
+- assets/images: Contém imagens utilizadas no projeto
+- components: Pastas com as páginas do projeto
+- global: reset css
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![image](https://github.com/gusstavo01/localizador-influencer/assets/105757864/9914a55f-c72b-4da7-b3a1-5ef571366113)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- config: conexão com o banco de dados
+- controllers: controladores responsáveis por lidar com as requisições HTTP e a lógica de negócios associada
+- middlewares: autenticador
+- models: define como os dados serão estruturados
+- routes: configuração de rotas
+- service: este arquivo fornece uma função que permite criar um hash seguro para uma senha usando o algoritmo bcrypt
 
-### `npm test`
+## Contruibuição 🔨
+#### Sugestões de Contribuição
+- Melhorias na interface do usuário.
+- Implementação de novas funcionalidades.
+- Correção de bugs.
+- Melhorias na documentação.
+- Otimizações de desempenho.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Interface
+### Site
+![Frame 1 (1)](https://github.com/gusstavo01/localizador-influencer/assets/105757864/c608351e-72ba-4475-a343-b7fbca7b804e)
+### Login 
+![image](https://github.com/gusstavo01/localizador-influencer/assets/105757864/2decd6d7-bdc2-430b-a736-40165dc6cac1)
+### Criar Conta
+![image](https://github.com/gusstavo01/localizador-influencer/assets/105757864/c5acc1b3-3b38-4da1-b09e-e898d5d0173c)
+### Painel
+![image](https://github.com/gusstavo01/localizador-influencer/assets/105757864/f1655bfa-e3c2-4425-8a76-7206466c6013)
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contato
+Linkedin: https://www.linkedin.com/in/gustavo-parente-aguiar-353538243/

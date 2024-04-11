@@ -53,4 +53,4 @@ Esta aplicação foi desenvolvida com o objetivo de facilitar a conexão entre e
 ![image](https://github.com/gusstavo01/localizador-influencer/assets/105757864/f1655bfa-e3c2-4425-8a76-7206466c6013)
 
 ## Contato
-Linkedin: https://www.linkedin.com/in/gustavo-parente-aguiar-353538243/
+Linkedin: www.linkedin.com/in/gustavo-aguiar-353538243
